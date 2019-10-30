@@ -1,5 +1,5 @@
 {
-    "name": "superpay/superpay",
+    "name": "superpay/payment",
     "description": "海外支付superpay",
     "type": "library",
     "license": "MIT",
