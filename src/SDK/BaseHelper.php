@@ -69,9 +69,12 @@ abstract class BaseHelper
      */
     public function checkSign($data)
     {
+        $pre_sign = $data['sign'];
         unset($data['sign']);
+        unset($data['sign_type']);
         $sign = $this->getSign($data); //本地签名
-        if ($data['sign'] == $sign) {
+
+        if ($pre_sign == $sign) {
             return true;
         }
 

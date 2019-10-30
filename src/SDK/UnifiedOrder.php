@@ -47,9 +47,9 @@ class UnifiedOrder extends TradeHelper
         }
     }
 
-    public function getJsPayParameters($prepayId)
+    public function getJsPayParameters($appid, $prepayId)
     {
-        $jsApiObj["appId"]     = $this->appId;
+        $jsApiObj["appId"]     = $appid;
         $timeStamp             = time();
         $jsApiObj["timeStamp"] = "$timeStamp";
         $jsApiObj["nonceStr"]  = $this->createNoncestr();

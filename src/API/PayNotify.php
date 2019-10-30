@@ -32,11 +32,11 @@ class PayNotify extends BaseHelper
     public function verifyToken($result)
     { 
         $md5String = 'notice_id=' . $result['notice_id'];
-        $md5String .= '&merchant_trade_no=' . $result['merchant_trade_no'];
-        $md5String .= '&authentication_code=' . $this->authenticationCode;
+        $md5String .= 'merchant_trade_no=' . $result['merchant_trade_no'];
+        $md5String .= 'authentication_code=' . $this->authenticationCode;
 
         $token = md5($md5String);
-
+        
         return $token === $result['token'];
     }
 }
