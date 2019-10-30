@@ -1,0 +1,21 @@
+{
+    "name": "superpay/superpay",
+    "description": "海外支付superpay",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "david",
+            "email": "David@97866.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "SuperPay\\": "superpay/src/"
+        }
+    }
+}
