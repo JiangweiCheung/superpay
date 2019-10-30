@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-          "SuperPay\\": "superpay/src/"
+          "SuperPay\\": "src/"
         }
     }
 }
